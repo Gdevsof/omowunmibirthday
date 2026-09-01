@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Happy Birthday My Love ❤️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff4b7d, #ff8fab, #ffc2d1);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .hero {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 30px;
+      padding: 40px 25px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      text-shadow: 0 0 15px #ff1744;
+    }
+
+    .cake {
+      font-size: 75px;
+      animation: bounce 2s infinite;
+    }
+
+    .main-photo {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid white;
+      margin: 25px 0;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin: 18px 0;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #ff3f6c;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background: #ffe4ec;
+    }
+
+    #message {
+      display: none;
+      margin-top: 30px;
+      padding: 25px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      animation: fadeIn 1s ease;
+    }
+
+    .gallery {
+      margin-top: 40px;
+    }
+
+    .gallery h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .photos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .photos img {
+      width: 250px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 4px solid white;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      transition: 0.4s;
+    }
+
+    .photos img:hover {
+      transform: scale(1.05);
+    }
+
+    .heart {
+      position: fixed;
+      font-size: 25px;
+      animation: float 7s infinite linear;
+      opacity: 0.7;
+      z-index: -1;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(100vh);
+      }
+
+      to {
+        transform: translateY(-100px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .main-photo {
+        width: 180px;
+        height: 180px;
+      }
+
+      .photos img {
+        width: 90%;
+        height: 350px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Floating Hearts -->
+  <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+  <div class="heart" style="left:25%; animation-delay:2s;">💕</div>
+  <div class="heart" style="left:50%; animation-delay:1s;">❤️</div>
+  <div class="heart" style="left:70%; animation-delay:3s;">💖</div>
+  <div class="heart" style="left:90%; animation-delay:4s;">💕</div>
+
+  <div class="container">
+
+    <div class="hero">
+
+      <div class="cake">🎂</div>
+
+      <!-- Main Picture -->
+      <img src="C:\Users\USER\OneDrive\Desktop\Omowunmi Birthday\omowunmi2.jpg"
+           alt="My Beautiful Crush"
+           class="main-photo">
+
+      <h1>
+        Happy Birthday,
+        <span class="name">My Beautiful Omowunmi ❤️</span>
+      </h1>
+
+      <p>
+        Today is not just another day. It is the day someone very
+        special, beautiful, and amazing came into this world.
+      </p>
+
+      <p>
+        I want you to know that you mean so much to me. Your smile,
+        your presence, and the little things about you have a way
+        of making everything feel better.
+      </p>
+
+      <button onclick="showLove()">
+        Click for a Special Message 💌
+      </button>
+
+      <div id="message">
+
+        <h2>❤️ A Message From My Heart ❤️</h2>
+
+        <p>
+          Happy Birthday, my beautiful Omowunmi.
+        </p>
+
+        <p>
+          I may not always find the perfect words to explain how I feel,
+          but I want you to know that you are someone incredibly special
+          to me.
+        </p>
+
+        <p>
+          I admire your beauty, your smile, and the amazing person you are.
+          Knowing you has brought something special into my life, and I
+          honestly appreciate every moment.
+        </p>
+
+        <p>
+          On this beautiful day, I pray that happiness never leaves you,
+          that your dreams come true, and that life gives you countless
+          reasons to smile.
+        </p>
+
+        <p>
+          No matter what happens, I want you to always remember that
+          there is someone here who cares deeply about you and loves you
+          more than words can explain. ❤️
+        </p>
+
+        <h2>
+          Happy Birthday, My Love 🎉🎂❤️
+        </h2>
+
+      </div>
+
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="gallery">
+
+      <h2>Some Beautiful Pictures of You ❤️</h2>
+
+      <div class="photos">
+
+        <img src="C:\Users\USER\OneDrive\Desktop\Omowunmi Birthday\omowunmi3.jpg"
+             alt="Omowunmi">
+
+        <img src="C:\Users\USER\OneDrive\Desktop\Omowunmi Birthday\omowunmi.jpg"
+             alt="Omowunmi">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
